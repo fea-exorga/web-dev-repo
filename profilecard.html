@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilecard</title>
+    <style>
+        .card{
+            display: flex;
+            width:500px;
+            margin: auto;
+            margin-top: 200px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 0 5px 3px slategray;
+            padding:20px;
+        }
+        img{
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .info{
+            margin: 10px;
+        }
+        button{
+            width: 90px;
+            height: 30px;
+            background-color:darkslategray;
+            color: white;
+            padding: 5px;
+            border-radius: 7px;
+            margin:5px;
+            font-size: medium;
+        }
+        button:hover{
+                background-color: rgb(72, 115, 115);
+        }
+        @media (max-width:640px){
+            .card{
+                flex-direction: column;
+                width:70vw;
+                align-items:center;
+                justify-content: flex-start;
+                margin-top:50px;
+            }
+            button{
+                width:90%;
+                display: block;
+                margin:auto;
+                margin-top: 10px;
+            }
+            .info{
+                text-align: center;
+                font-weight:lighter;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQFk1kB6-sg3cw/profile-displayphoto-scale_200_200/B4EZkGVYnKGwBI-/0/1756747893918?e=2147483647&v=beta&t=SR2DXlGP_EqUVyevAyAjrmNOSoO122DAulCmtMvYjps" width="180px" height="180px">
+        <h2>Harshita Senani</h2>
+        </div>
+        <div class="info">
+            <P>Exploring Web Development and Frontend Enthusiast.<br>
+            Loves coding and experimenting with creative designs.</P>
+            <button>Contact</button>
+            <a href=".\index.html" target="_blank">
+                <button>Portfolio</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
