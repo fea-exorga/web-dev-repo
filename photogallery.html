@@ -7,6 +7,7 @@
     <style>
         *{
             margin:0;
+            box-sizing: border-box;
         }
         .title{
             text-align:center;
@@ -34,6 +35,18 @@
             object-fit: fill;
             height:100%;
             width:100%;
+        }
+        @media (max-width: 768px){
+            .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px){
+            .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
